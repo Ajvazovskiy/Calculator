@@ -29,27 +29,27 @@ class Calc
 		return a / b;
 	}
 public:
-	double Operator()
+	void Operator()
 	{
 		double a, b;
 		char ch;
-		cout << "¬вед≥ть числа через проб≥л";
+		cout << "¬вед≥ть числа через проб≥л: \t";
 		cin >> a >> b;
-		cout << "¬вед≥ть оператор";
+		cout << "¬вед≥ть оператор: \t";
 		ch = _getch();
 		switch (ch)
 		{
 		case '+':system("cls");
-			dodavanja(a, b);
+			cout << dodavanja(a, b);
 			break;
 		case '-':system("cls");
-			vidnimanja(a, b);
+			cout << vidnimanja(a, b);
 			break;
 		case '*':system("cls");
-			dobutok(a, b);
+			cout << dobutok(a, b);
 			break;
 		case '/':system("cls");
-			dilenja(a, b);
+			cout << dilenja(a, b);
 			break;
 		default:
 			break;
