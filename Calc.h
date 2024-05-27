@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<Windows.h>
+#include<conio.h>
 using namespace std;
 
 class Calc
@@ -28,6 +29,31 @@ class Calc
 		return a / b;
 	}
 public:
-	
+	double Operator()
+	{
+		double a, b;
+		char ch;
+		cout << "¬вед≥ть числа через проб≥л";
+		cin >> a >> b;
+		cout << "¬вед≥ть оператор";
+		ch = _getch();
+		switch (ch)
+		{
+		case '+':system("cls");
+			dodavanja(a, b);
+			break;
+		case '-':system("cls");
+			vidnimanja(a, b);
+			break;
+		case '*':system("cls");
+			dobutok(a, b);
+			break;
+		case '/':system("cls");
+			dilenja(a, b);
+			break;
+		default:
+			break;
+		}
+	}
 };
 
